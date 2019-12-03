@@ -7,7 +7,7 @@ pages:
     defaults: { _controller: AppBundle:Page:index }
 
 page:
-    path:     /page/{id}
+    path:     /pages/{id}
     defaults: { _controller: AppBundle:Page:show }
     requirements:
         id: '\d+'
