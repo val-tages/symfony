@@ -1,0 +1,13 @@
+homepage:
+    path:     /
+    defaults: { _controller: AppBundle:Default:index }
+
+pages:
+    path:     /pages
+    defaults: { _controller: AppBundle:Page:index }
+
+page:
+    path:     /page/{id}
+    defaults: { _controller: AppBundle:Page:show }
+    requirements:
+        id: '\d+'
