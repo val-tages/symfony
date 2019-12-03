@@ -16,7 +16,9 @@
 /vendor/
 /web/bundles/
 
+.gitignore
 clear.sh
+/.idea/*
 
 # Project exclude paths
 /var/
