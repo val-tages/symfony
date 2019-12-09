@@ -10,4 +10,16 @@ namespace AppBundle\Repository;
  */
 class PageRepository extends \Doctrine\ORM\EntityRepository
 {
+
+    public function findActive()
+    {
+        return $this
+                ->createQueryBuilder('page')
+                ->where('page.id > :id')
+                    ->setParameter('id', 1)
+                ->getQuery()
+                ->getResult();
+
+
+    }
 }
